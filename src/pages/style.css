@@ -1,0 +1,224 @@
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+main .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section {
+  margin-top: 5.05vw;
+  margin-bottom: 5.36vw;
+  text-align: center;
+  width: 100%;
+}
+
+section h1 {
+  font-family: "Poltik", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 3.33vw;
+}
+
+section p {
+  font-family: Arial, sans-serif;
+  color: rgba(153, 153, 153, 1);
+  font-size: 1.1vw;
+}
+
+@font-face {
+  font-family: "Poltik";
+  src: url("../fonts/Wid.otf") format("opentype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "PoltikNew";
+  src: local("Poltik"), url("../fonts/Poltik-Bold_0.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+.block-1 .block {
+  filter: drop-shadow(0 -13px 86.6px rgba(233, 69, 59, 0.45));
+  background-color: #ffaeae;
+  position: relative;
+  margin-top: 2.66vh;
+  width: 106.98vw;
+  height: 57.6vw;
+}
+
+.block-1 .block #background_launcher {
+  position: absolute;
+  z-index: 50;
+  width: 100%;
+  height: 100%;
+  opacity: 22%;
+  top: 0;
+  left: 0;
+}
+
+.block-1 .block #launcher_img {
+  position: absolute;
+  border-radius: 1.3vw;
+  z-index: 101;
+  width: 58vw;
+  height: 43.02vw;
+  left: 46%;
+  top: 50%;
+  transform: translateY(-50%);
+  box-shadow: -5px 2px 50.8px 4px #e9453b70;
+
+  transition: transform 0.7s ease;
+  animation: fadeInSlide 1s ease-out forwards;
+}
+
+.block-1 .block #launcher_img:hover {
+  transform: translateY(-50%) scale(1.02);
+}
+
+/* Для мобильных */
+@media (max-width: 768px) {
+  .block-1 .block #launcher_img {
+    transform: translateY(-50%) translateX(3%) scale(1.1);
+    left: 44%;
+  }
+}
+
+@keyframes fadeInSlide {
+  from {
+    opacity: 0;
+    left: 56%;
+  }
+  to {
+    opacity: 1;
+    left: 46%;
+  }
+}
+
+.block-1 .block ul {
+  font-family: "Poltik";
+  line-height: 170%;
+  font-size: 2.34vw;
+  position: absolute;
+  z-index: 50;
+  top: 50%;
+  left: 8%;
+  transform: translateY(-50%);
+  margin: 0;
+  padding: 0;
+}
+
+.block-2 .block {
+  margin-top: -3%;
+  z-index: 50;
+  position: relative;
+  background-color: #ff6868;
+  width: 106.98vw;
+  height: 57.6vw;
+}
+
+.block-2 .block #background_cheats {
+  position: absolute;
+  z-index: 51;
+  opacity: 33%;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.block-2 .block #cheats_img {
+  position: absolute;
+  z-index: 51;
+  border-radius: 1.67vw;
+  width: 66.77vw;
+  height: 38.44vw;
+  margin-left: -19.58vw;
+  margin-top: 9.53vw;
+  box-shadow: 0 -3px 127.2px 6px #E71B1B;
+}
+
+.block-2 .block h1 {
+  position: absolute;
+  z-index: 100;
+  line-height: 170%;
+  font-size: 4.27vw;
+  margin-top: 21.46vw;
+  margin-left: 50vw;
+  padding: 0;
+}
+
+.block-2 .block p {
+  position: absolute;
+  z-index: 100;
+  color: #2c2c2c;
+  font-family: "PoltikNew";
+  font-size: 2.08vw;
+  margin-top: 34.48vw;
+  margin-left: 50vw;
+}
+
+.block-3 .block {
+  position: relative;
+  background-color: #EE6F67;
+  width: 106.98vw;
+  height: 23.65vw;
+}
+
+.block-3 .block #background_download {
+  position: absolute;
+  object-fit: cover;
+  opacity: 35%;
+  width: 113vw;
+  height: 27.69vw;
+  bottom: 0;
+}
+
+.block-3 .block h1 {
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  font-size: 3.33vw;
+  text-align: center;
+}
+
+.block-3 .block button {
+  position: absolute;
+  z-index: 1;
+  background-color: rgba(233, 69, 59, 1);
+  border: 0;
+  cursor: pointer;
+  min-width: 22.81vw;
+  height: 6.72vw;
+  border-radius: 1.04vw;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 4px 54.7px 9px rgba(246, 81, 81, 0.7);
+  top: 13.59vw;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: all 0.7s ease;
+}
+
+.block-3 .block button p {
+  font-family: 'Archive Ukr';
+  color: white;
+  font-size: 2.24vw;
+}
+
+.block-3 .block button:hover {
+  transform: translateX(-50%) scale(1.07);
+}

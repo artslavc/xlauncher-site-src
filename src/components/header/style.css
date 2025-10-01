@@ -1,0 +1,115 @@
+header {
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.container #xlauncher_img {
+  height: 4.11vw;
+  margin-left: 15.63vw;
+  margin-top: 2.55vw;
+}
+
+.container #vk_img {
+  height: 2.92vw;
+  margin-left: 9.53vw;
+  margin-top: 3.13vw;
+  transition: all 0.4s ease;
+}
+
+.container #vk_img:hover {
+  transform: scale(1.12);
+}
+
+.container h1 {
+  font-family: "Poltik";
+  font-size: 2.34vw;
+  margin-top: 3.13vw;
+  margin-left: 0.42vw;
+}
+
+@font-face {
+  font-family: "Poltik";
+  src: local("Poltik"), url("../../fonts/Poltik-Bold_0.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Archive Ukr";
+  src: local("Archive Ukr"),
+    url("../../fonts/ArchiveUkr.ttf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+nav {
+  margin-top: 4.06vw;
+  margin-left: 9.11vw;
+}
+
+nav .btn {
+  text-decoration: none;
+  color: rgba(153, 153, 153, 1);
+  font-family: "Arial";
+  font-size: 1.25vw;
+  margin-right: 2.3vw;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+nav .btn:last-child {
+  margin-right: 0;
+}
+
+nav .btn::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: -5px;
+  left: 50%;
+  background-color: rgba(233, 69, 59, 1);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateX(-50%);
+}
+
+nav .btn:hover {
+  color: rgba(233, 69, 59, 1);
+}
+
+nav .btn:hover::after {
+  width: 90%;
+  height: 2px;
+  opacity: 1;
+}
+
+header button {
+  background-color: rgba(233, 69, 59, 1);
+  border: 0;
+  cursor: pointer;
+  min-width: 16.09vw;
+  height: 3.8vw;
+  border-radius: 1.04vw;
+  margin-top: 2.66vw;
+  margin-left: 1.04vw;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: all 0.7s ease;
+}
+
+header button p {
+  color: white;
+  font-family: "Archive Ukr";
+  font-size: 1.3vw;
+}
+
+header button:hover {
+  transform: scale(1.07);
+}
